@@ -13,3 +13,4 @@ docker run -it --rm -p 80:80 -p 443:443 nginx
 Helpful command:
 access log for request to nginx server: tail -f /var/log/nginx/access.log
 check the configuration is installed sucessfully:  nginx -t
+how to get your ip: ip addr show eth0 | grep inet | awk '{ print $2; }' | sed ’s/\/.*$//'
